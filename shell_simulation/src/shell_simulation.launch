@@ -1,0 +1,17 @@
+<launch>
+<node pkg="shell_simulation"
+  name="shell_simulation_node"
+  type="navigation.py"
+  output='screen'
+  />
+<node pkg="shell_simulation"
+  name="steering_cmd"
+  type="send_control_cmd_test.py"
+  />
+<node pkg="shell_simulation"
+  name="score_simulation"
+  type="score.py"
+  output='screen'
+  />
+
+</launch>
